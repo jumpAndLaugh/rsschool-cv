@@ -10,8 +10,8 @@
 ## About me
 I am 25 years old. I work in the construction industry. Technical education.
 * **My strengths:**
-   ++ Team playing
-   ++ Diligence
+   + Team playing
+   + Diligence
 ****
 ## Skills:
 * HTML
