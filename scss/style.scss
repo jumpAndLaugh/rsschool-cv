@@ -36,7 +36,15 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 body {
-   background-color: #000;
-   color: aqua;
+   background-color: #f0f0f0;
+   font-family: 'PT Serif', serif;
+}
+.wrapper {
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 30px 10px;
 }
