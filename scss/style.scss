@@ -1,0 +1,195 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+body {
+   background-color: #f0f0f0;
+   font-family: 'PT Serif', serif;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 30px 10px;
+}
+.title {
+   text-align: center;
+      font-size: 30px;
+      margin: 0px 0px 30px 0px;
+}
+.header {
+
+	&__menu {
+      background-color: darkslategray;
+      border-radius: 10px;
+      box-shadow: 3px 5px 5px rgb(38, 36, 36);
+	}
+
+	&__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      padding: 20px 10px;
+      text-align: center;
+	}
+
+   &__list li a {
+      color : #fff;
+      font-size: 16px;
+      
+   }
+   &__list li a:hover {
+      text-decoration: underline;
+   }
+}
+.main {
+   margin: 50px 0px 0px 0px;
+   //section 1
+}
+.name {
+   max-width: 900px;
+   margin: 0 auto;
+
+   &__block {
+      display: grid;
+      grid-template-columns: minmax(auto, 400px) 1fr;
+      justify-items: center;
+      align-items: center;
+   }
+
+   &__greetings {
+      font-size: 54px;
+      color: dimgrey;
+      line-height: 80px;
+   }
+
+   &__image {
+      width: 400px;
+   }
+
+   &__image img{
+      max-width: 100%;
+   } 
+}
+//section 2
+.about {
+
+   &__block {
+      margin: 50px 0px 0px 0px;
+   }
+
+   &__text {
+      font-size: 16px;
+      line-height: 150%;
+   }
+
+   &__text::first-letter {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 200%;
+      color: red;
+   }
+
+   &__list {
+      margin: 20px 0px 0px 40px ;
+   }
+   &__list h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0px 0px 10px 0px;
+   }
+   &__list li {
+      list-style-type: circle;
+      font-size: 16px;
+      margin: 0px 0px 0px 30px;
+      padding: 5px 0px;
+   }
+   &__list-languages {
+      margin: 20px 0px 0px 40px;
+   }
+   &__list-languages h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0px 0px 10px 0px;
+   }
+   &__list-languages li {
+      list-style-type: circle;
+      font-size: 16px;
+      margin: 0px 0px 0px 30px;
+      padding: 5px 0px;
+   }
+}
+//section 3
+.education {
+
+   &__block {
+      margin: 50px 0px 0px 0px;
+   }
+
+   &__list li{
+      padding: 10px 0px 0px 0px;
+      list-style-type: disc;
+      font-size: 16px;
+   }
+}
+//section 4
+.code {
+   padding: 50px 0px 0px 0px;
+   &__block {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: darkslategray;
+      box-shadow: 7px 5px 5px rgb(38, 36, 36);
+      border-radius: 10px;
+      padding: 30px 0px 20px 0px;
+   }
+
+   &__title {
+      color: #fff;
+   }
+
+   &__text {
+      color: #f0f0f0;
+      font-size: 16px;
+      margin: 15px 0px 0px 0px;
+      font-family: 'Inconsolata', monospace;
+   }
+}
+//section 5
+.projects {
+   display: none;
+}
+//section 6
