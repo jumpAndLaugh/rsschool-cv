@@ -152,10 +152,10 @@ body {
 .about__list {
   margin: 20px 0px 0px 40px;
 }
-.about__list h4 {
+.about h4 {
   font-size: 20px;
   font-weight: 600;
-  margin: 0px 0px 10px 0px;
+  margin: 20px 0px 10px 40px;
 }
 .about__list li {
   list-style-type: circle;
@@ -203,7 +203,7 @@ body {
 }
 .code__text {
   color: #f0f0f0;
-  font-size: 16px;
+  font-size: 18px;
   margin: 15px 0px 0px 0px;
   font-family: "Inconsolata", monospace;
 }
