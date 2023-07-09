@@ -35,6 +35,10 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input, button, textarea {
   font-family: inherit;
 }
@@ -89,6 +93,7 @@ body {
   text-align: center;
   font-size: 30px;
   margin: 0px 0px 30px 0px;
+  font-weight: 500;
 }
 
 .header__menu {
@@ -151,10 +156,10 @@ body {
 .about__list {
   margin: 20px 0px 0px 40px;
 }
-.about__list h4 {
+.about h4 {
   font-size: 20px;
   font-weight: 600;
-  margin: 0px 0px 10px 0px;
+  margin: 20px 0px 10px 40px;
 }
 .about__list li {
   list-style-type: circle;
@@ -202,11 +207,89 @@ body {
 }
 .code__text {
   color: #f0f0f0;
-  font-size: 16px;
+  font-size: 18px;
   margin: 15px 0px 0px 0px;
   font-family: "Inconsolata", monospace;
 }
 
 .projects {
   display: none;
+}
+
+.skills__block {
+  margin: 50px 0px 0px 0px;
+}
+.skills__list {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px 0;
+}
+.skills__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+}
+.skills__item h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contacts__block {
+  margin: 80px 0px 50px 0px;
+}
+.contacts__list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  margin: 50px 0px 0px 0px;
+}
+.contacts__item1 {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px black;
+}
+.contacts__item2 {
+  grid-column: 4/5;
+  grid-row: 5/6;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 25%;
+  box-shadow: 3px 3px 3px black;
+}
+.contacts__item3 {
+  grid-column: 7/8;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px black;
+}
+
+.footer {
+  background-color: darkslategray;
+}
+.footer__block {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0px 0px 0px;
+}
+.footer__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0 0;
+  justify-items: center;
+  align-items: center;
+}
+.footer__rs {
+  max-width: 48px;
+  grid-row: 1;
+  grid-column: 7/8;
+}
+.footer__rs img {
+  width: 100%;
+  height: 100%;
+}
+.footer__year {
+  grid-column: 4/5;
+  grid-row: 1;
+  font-size: 20px;
 }
